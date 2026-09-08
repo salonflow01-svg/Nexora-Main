@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found | Nexora Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Primary favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/nexora-favicon/favicon.svg">
+
+    <!-- PNG fallback -->
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/nexora-favicon/favicon-96x96.png">
+
+    <!-- Legacy fallback -->
+    <link rel="shortcut icon" href="/assets/favicon/nexora-favicon/favicon.ico">
+
+    <!-- Apple devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/nexora-favicon/apple-touch-icon.png">
+
+    <!-- Web app manifest -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- PWA Theme Color -->
+    <meta name="theme-color" content="#4F46E5">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Nexora">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script defer src="/static/js/pwa.js"></script>
+    <script defer src="/static/js/app.js"></script>
+
+    <link rel="stylesheet" href="static/css/404.css">
+
+    <link rel="stylesheet" href="static/css/responsive/style.css">
+
+    <script src="static/js/404.js" defer></script>
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <div class="header-wrapper">
+        <!-- ── MAIN HEADER ── -->
+        <header class="header" role="banner">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="/" class="logo-link" aria-label="Nexora home">
+                    <img class="logo-text" src="/assets/logo/favicon.svg" alt="Nexora Logo" width="143px" height="auto" alt="Nexora Studio logo" loading="eager">
+                </a>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html#solutions" class="nav-link">Solutions</a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#capabilities" class="nav-link">Capabilities</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="work.html" class="nav-link">Work</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- CTA -->
+            <div class="header-cta">
+                <a href="https://wa.me/254713324672?text=Hi%20Nexora%2C%20I%20landed%20on%20the%20404%20page%20and%20would%20like%20help%20finding%20the%20right%20place%20to%20start%20a%20project%20conversation." target="_blank" rel="noopener" class="btn-primary">Start a Conversation <i class="fas fa-angle-right"></i></a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <!-- ── MOBILE MENU ── -->
+        <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+            <a href="index.html#solutions" class="nav-link">Solutions</a>
+            <a href="index.html#capabilities" class="nav-link">Capabilities</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="work.html" class="nav-link">Work</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="https://wa.me/254713324672?text=Hi%20Nexora%2C%20I'm%20using%20the%20404%20page%20menu%20and%20would%20like%20to%20start%20a%20conversation%20about%20my%20project." target="_blank" rel="noopener" class="btn-primary">Start a Conversation</a>
+        </div>
+    </div>
+
+    <button id="installAppBtnFloating" class="floating-install-btn" type="button" aria-label="Install Nexora app" hidden>
+        <i class="fas fa-download"></i>
+        <span>Install App</span>
+    </button>
+
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- 404 CONTENT — STRIPE-STYLE ELEVATED                   -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <main class="error-main">
+        <div class="error-container">
+
+            <!-- Text Block -->
+            <div class="error-text">
+                <h1 class="error-title">This page doesn't exist.</h1>
+                <p class="error-descr"> The page you're looking for may have moved, been removed, or never existed. Visit our <a href="/" class="error-link">homepage</a>, or try one of these.</p>
+            </div>
+
+            <!-- Card Grid -->
+            <nav class="error-grid" aria-label="Helpful links">
+
+                <a href="services.html" class="error-card">
+                    <div class="card-icon icon-services">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h2 class="card-title">
+                        Services
+
+                        <span>
+                            <i class="fas fa-arrow-right" style="font-size: 11px;"></i>
+                        </span>
+                    </h2>
+                    <p class="card-descr">Explore our full suite of digital solutions, from strategy to development.</p>
+                </a>
+
+                <a href="work.html" class="error-card">
+                    <div class="card-icon icon-work">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h2 class="card-title">
+                        Our Work
+
+                        <span>
+                            <i class="fas fa-arrow-right" style="font-size: 11px;"></i>
+                        </span>
+                    </h2>
+                    <p class="card-descr">Browse case studies and see how we move businesses forward.</p>
+                </a>
+
+                <a href="about.html" class="error-card">
+                    <div class="card-icon icon-about">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h2 class="card-title">
+                        About
+
+                        <span>
+                            <i class="fas fa-arrow-right" style="font-size: 11px;"></i>
+                        </span>
+                    </h2>
+                    <p class="card-descr">Learn about Nexora's mission, team, and the values that drive us.</p>
+                </a>
+
+                <a href="/" class="error-card">
+                    <div class="card-icon icon-home">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h2 class="card-title">
+                        Homepage
+
+                        <span>
+                            <i class="fas fa-arrow-right" style="font-size: 11px;"></i>
+                        </span>
+                    </h2>
+                    <p class="card-descr">Return to the main base and start your journey from the top.</p>
+                </a>
+
+                <a href="contact.html" class="error-card">
+                    <div class="card-icon icon-contact">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h2 class="card-title">
+                        Contact
+
+                        <span>
+                            <i class="fas fa-arrow-right" style="font-size: 11px;"></i>
+                        </span>
+                    </h2>
+                    <p class="card-descr">Reach out directly. We'd love to hear about your next project.</p>
+                </a>
+
+                <a href="https://wa.me/254713324672?text=Hi%20Nexora%2C%20I%20landed%20on%20the%20404%20page%20but%20I%20want%20to%20start%20a%20project%20conversation%20and%20tell%20you%20what%20I'm%20building." target="_blank" rel="noopener" class="error-card">
+                    <div class="card-icon icon-start">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h2 class="card-title">Start a
+                        Project
+
+                        <span>
+                            <i class="fas fa-arrow-right" style="font-size: 11px;"></i>
+                        </span>
+                    </h2>
+                    <p class="card-descr">Tell us what you're building and let's create something extraordinary.</p>
+                </a>
+
+            </nav>
+
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="content">
+            <!-- TOP NAV -->
+            <div class="top-nav">
+                <div class="card">
+                    <a href="/" style="text-decoration: none;" class="logo">nexora</a>
+                    <p class="descr">Building the digital systems that move businesses forward.</p>
+                    <p class="location">Nairobi, Kenya</p>
+                </div>
+
+                <div class="card">
+                    <h2 class="heading">Explore</h2>
+
+                    <nav>
+                        <a href="/">
+                            <li>Home</li>
+                        </a>
+                        <a href="about.html">
+                            <li>About</li>
+                        </a>
+                        <a href="services.html">
+                            <li>Services</li>
+                        </a>
+                        <a href="work.html">
+                            <li>Work</li>
+                        </a>
+                        <a href="contact.html">
+                            <li>Contact</li>
+                        </a>
+                    </nav>
+                </div>
+
+                <div class="card">
+                    <h2 class="heading">Capabilities</h2>
+
+                    <nav>
+                        <a href="/services.html#strategy">
+                            <li>Strategy</li>
+                        </a>
+                        <a href="/services.html#digital-experiences">
+                            <li>Digital Experiences</li>
+                        </a>
+                        <a href="/services.html#business-systems">
+                            <li>Business Systems</li>
+                        </a>
+                        <a href="/services.html#intelligence">
+                            <li>Intelligence</li>
+                        </a>
+                    </nav>
+                </div>
+
+                <div class="card">
+                    <h2 class="heading">Resources</h2>
+
+                    <nav>
+                        <a href="#case-studies">
+                            <li>Case Studies</li>
+                        </a>
+                        <a href="#insights">
+                            <li>Insights</li>
+                        </a>
+                        <a href="#faq">
+                            <li>FAQ</li>
+                        </a>
+                    </nav>
+                </div>
+
+                <div class="card">
+                    <h2 class="heading">Connect</h2>
+
+                    <nav>
+                        <a href="#youtube" title="Youtube">
+                            <li><i class="fab fa-youtube"></i> Youtube</li>
+                        </a>
+                        <a href="#linkedIn" title="LinkedIn">
+                            <li><i class="fab fa-linkedin-in"></i> LinkedIn</li>
+                        </a>
+                        <a href="#tiktok" title="Tiktok">
+                            <li><i class="fab fa-tiktok"></i> Tiktok</li>
+                        </a>
+                        <a href="#whatsapp" title="Whatsapp">
+                            <li><i class="fab fa-whatsapp"></i> Whatsapp</li>
+                        </a>
+                    </nav>
+                </div>
+
+            </div>
+
+            <!-- BOTTOM NAV -->
+            <div class="bottom-nav">
+                <div class="copywright">&copy 2026 Nexora Studio. All rights reserved</div>
+
+                <nav>
+                    <a href="#privacy-policy">
+                        <li>Privacy Policy</li>
+                    </a>
+                    <a href="#terms-of-services">
+                        <li>Terms of Service</li>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

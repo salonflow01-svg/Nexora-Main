@@ -1,0 +1,1680 @@
+:root {
+    --font-family: "SF Pro Display", sans-serif;
+    --font-nevera: 'Nevera', sans-serif;
+
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+    --ls-tight: -0.045em;
+    --ls-normal: -0.02em;
+
+    --lh-heading: 1.05;
+    --lh-body: 1.5;
+
+    --shadow:  -8px 18px 35px rgba(0, 0, 0, 0.35);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.service-hero .highlight  {
+    color: white;
+    font-size: 15px;
+    font-weight: var(--fw-medium);
+    font-family: var(--font-family);
+
+    opacity: .65;
+
+    margin-top: 80px;
+}
+
+
+
+.contact-details-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+
+.contact-details-card .card {
+    padding: 28px;
+    border-radius: 10px;
+
+    margin-top: 22px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+
+    box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.12),
+    0 14px 38px rgba(0, 0, 0, 0.14);
+}
+
+
+.contact-details-card .card .title {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: calc(var(--fw-bold) - 100);
+    letter-spacing: normal;
+    color: #0A2540;
+    font-family: var(--font-family);
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 22px;
+}
+
+
+.contact-details-card .card  .descr {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: var(--fw-medium);
+    font-family: var(--font-family);
+    letter-spacing: normal;
+    color: #425466;
+    width: 296px;
+
+    margin-bottom: 30px;
+}
+
+
+.contact-details-card .card-details {
+    margin-top: 20px;
+}
+
+
+.contact-details-card .card-details .title {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: normal;
+    font-weight: 600;
+    font-family: var(--font-family);
+    color: #0A2540;
+    padding-left: 18px;
+
+    margin-bottom: 8px;
+
+    position: relative;
+}
+
+.contact-details-card .card-details .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+
+    background-color: rgb(99, 91, 255);
+}
+
+
+.contact-details-card .card-details .descr {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: normal;
+    font-weight: var(--fw-medium);
+    font-family: var(--font-family);
+    color: #425466;
+    width: fit-content;
+    padding-left: 18px;
+
+    margin-bottom: 8px;
+}
+
+
+.contact-details-card .card .btn-primary {
+    background: #0D1738;
+    font-size: 14px;
+    padding: 8px 16px;
+}
+.contact-details-card .card .btn-primary:hover {
+        background: #151F45;
+}
+.contact-details-card .card .btn-primary i {
+    font-size: 11px;
+}
+
+
+
+/* ============================================================
+   NEXORA — PROJECT TYPE / PROJECT DETAILS
+   CARDS + GENERATED PROJECT FORMS
+   ============================================================ */
+
+
+/* ============================================================
+   PROJECT TYPE — CARDS GRID
+   ============================================================ */
+
+.project-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+
+    width: 100%;
+
+    margin-bottom: 28px;
+}
+
+
+/* ============================================================
+   PROJECT CARD
+   ============================================================ */
+
+.project-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 270px;
+
+    padding: 28px 24px 22px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #E4E7EC;
+    border-radius: 12px;
+
+    cursor: pointer;
+    user-select: none;
+
+    -webkit-tap-highlight-color: transparent;
+
+    transition:
+        border-color .25s ease,
+        background-color .25s ease,
+        box-shadow .25s ease;
+
+    box-shadow:
+        0 1px 2px rgba(15, 23, 42, .025);
+
+}
+
+
+/* ============================================================
+   CARD HOVER
+   ============================================================ */
+
+.project-card:hover {
+    border-color: #D7D9E5;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 4px 16px rgba(15, 23, 42, .045);
+}
+
+
+/* ============================================================
+   ACTIVE / SELECTED CARD
+   ============================================================ */
+
+.project-card.active {
+    border-color: #635BFF;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(99, 91, 255, .055) 0%,
+            rgba(99, 91, 255, .025) 100%
+        );
+
+    box-shadow:
+        0 0 0 1px rgba(99, 91, 255, .08),
+        0 8px 24px rgba(99, 91, 255, .08);
+}
+
+
+/* ============================================================
+   CARD NUMBER
+   ============================================================ */
+
+.project-card .card-number {
+    display: block;
+
+    margin-bottom: 26px;
+
+    color: #9A9AAB;
+
+    font-family: var(--font-family);
+
+    font-size: .82rem;
+    font-weight: var(--fw-bold);
+
+    line-height: 1;
+
+    letter-spacing: .08em;
+
+    transition: color .25s ease;
+}
+
+.project-card.active .card-number {
+    color: #635BFF;
+}
+
+
+/* ============================================================
+   CARD TITLE
+   ============================================================ */
+
+.project-card .card-title {
+    margin: 0 0 10px;
+
+    color: #171A2B;
+
+    font-family: var(--font-family);
+
+    font-size: 1.05rem;
+    font-weight: var(--fw-bold);
+
+    line-height: 1.2;
+    letter-spacing: var(--ls-normal);
+
+    text-transform: uppercase;
+}
+
+.project-card .card-title span {
+    font-size: .88rem !important;
+    text-transform: capitalize;
+    color: #575e72;
+
+    font-weight: calc(var(--fw-bold) - 100);
+}
+
+
+/* ============================================================
+   CARD DESCRIPTION
+   ============================================================ */
+
+.project-card .card-desc {
+    margin: 0;
+
+    color: #667085;
+
+    font-family: var(--font-family);
+
+    font-size: .88rem;
+    font-weight: var(--fw-medium);
+
+    line-height: var(--lh-body);
+}
+
+
+/* ============================================================
+   CARD FOOTER
+   ============================================================ */
+
+.project-card .card-footer {
+    display: flex;
+    align-items: center;
+
+    margin-top: auto;
+    padding-top: 26px;
+}
+
+
+/* ============================================================
+   CARD TAG
+   ============================================================ */
+
+.project-card .card-tag {
+    display: inline-flex;
+
+    padding: 6px 9px;
+
+    background: #F7F7FA;
+
+    border: 1px solid #ECEEF3;
+    border-radius: 4px;
+
+    color: #73778A;
+
+    font-family: var(--font-family);
+
+    font-size: .68rem;
+    font-weight: var(--fw-medium);
+
+    line-height: 1.2;
+
+    flex-direction: column;
+}
+
+.project-card .card-tag strong {
+    font-size: .79rem;
+    margin-bottom: 8px;
+}
+
+.project-card.active .card-tag {
+    background: rgba(99, 91, 255, .08);
+
+    border-color: rgba(99, 91, 255, .14);
+
+    color: #635BFF;
+}
+
+
+/* ============================================================
+   CARD ARROW
+   ============================================================ */
+
+.project-card .card-arrow {
+    display: none !important;
+}
+
+
+/* ============================================================
+   CARD FOCUS
+   ============================================================ */
+
+.project-card:focus-visible {
+    outline: 2px solid #635BFF;
+    outline-offset: 3px;
+}
+
+
+/* ============================================================
+   SUPPORTING NOTE
+   ============================================================ */
+
+.project-supporting-note {
+    display: block;
+
+    width: 100%;
+
+    margin-bottom: 30px;
+    padding: 15px 18px;
+
+    box-sizing: border-box;
+
+    background: #F7F8FA;
+
+    border-left: 3px solid #635BFF;
+    border-radius: 6px;
+
+    color: #73778A;
+
+    font-family: var(--font-family);
+
+    font-size: .82rem;
+    font-weight: var(--fw-medium);
+
+    line-height: var(--lh-body);
+}
+
+.project-supporting-note strong {
+    color: #171A2B;
+
+    font-weight: var(--fw-bold);
+}
+
+
+/* ============================================================
+   CONTINUE ROW
+   ============================================================ */
+
+.project-continue-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 16px;
+
+    min-height: 50px;
+}
+
+
+/* ============================================================
+   CONTINUE STATUS
+   ============================================================ */
+
+.continue-status {
+    color: #9A9AAB;
+
+    font-family: var(--font-family);
+
+    font-size: .78rem;
+    font-weight: var(--fw-medium);
+
+    line-height: 1.4;
+}
+
+
+/* ============================================================
+   CONTINUE BUTTON
+   ============================================================ */
+
+.project-continue-row .continue-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    min-height: 42px;
+
+    padding: 10px 18px;
+
+    box-sizing: border-box;
+
+    background: #0D1738;
+
+    border: 0;
+    border-radius: 4px;
+
+    color: #ffffff;
+
+    font-family: var(--font-family);
+
+    font-size: .82rem;
+    font-weight: var(--fw-bold);
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    opacity: .45;
+
+    pointer-events: none;
+
+    transition:
+        opacity .25s ease,
+        background-color .25s ease,
+        box-shadow .25s ease;
+}
+
+
+/* ============================================================
+   ACTIVE CONTINUE BUTTON
+   ============================================================ */
+
+.project-continue-row .continue-btn.active {
+    opacity: 1;
+
+    pointer-events: auto;
+}
+
+.project-continue-row .continue-btn.active:hover {
+    background: #151F45;
+
+    box-shadow:
+        0 4px 14px rgba(13, 23, 56, .12);
+}
+
+.project-continue-row .continue-btn:active {
+    box-shadow: none;
+}
+
+
+/* ============================================================
+   CONTINUE BUTTON ICON
+   ============================================================ */
+
+.project-continue-row .continue-btn i {
+    font-size: .7rem;
+
+    transition: transform .25s ease;
+}
+
+.project-continue-row .continue-btn:hover i {
+    transform: translateX(3px);
+}
+
+
+/* ============================================================
+   ============================================================
+   PROJECT DETAILS — GENERATED CONTENT
+   ============================================================
+   ============================================================ */
+
+
+/* ============================================================
+   BRANCH CONTENT
+   ============================================================ */
+
+.project-details-section #branchContent {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+
+/* ============================================================
+   BACK ROW
+   ============================================================ */
+
+.project-details-section .back-row {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 26px;
+}
+
+
+/* ============================================================
+   BACK BUTTON
+   ============================================================ */
+
+.project-details-section .back-btn {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 7px;
+
+
+    background: transparent;
+
+    border: 0;
+
+    color: #667085;
+
+    font-family: var(--font-family);
+
+    font-size: .85rem;
+    font-weight: var(--fw-medium);
+
+    line-height: 1.4;
+
+    cursor: pointer;
+
+    transition:
+        color .2s ease;
+}
+
+.project-details-section .back-btn:hover {
+    color: #171A2B;
+}
+
+
+/* ============================================================
+   BACK ARROW
+   ============================================================ */
+
+.project-details-section .back-arrow {
+    display: inline-flex;
+    align-items: center;
+
+    font-family: var(--font-family);
+
+    font-size: 1rem;
+
+    line-height: 1;
+}
+
+
+/* ============================================================
+   GENERATED FORM GROUP
+   ============================================================ */
+
+.project-details-section #branchContent .form-group {
+    width: 100%;
+
+    margin-bottom: 25px;
+}
+
+
+/* ============================================================
+   FORM LABEL
+   ============================================================ */
+
+.project-details-section #branchContent .form-group > label {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #171A2B;
+
+    font-family: var(--font-family);
+
+    font-size: .88rem;
+    font-weight: var(--fw-bold);
+
+    line-height: 1.4;
+}
+
+
+/* ============================================================
+   RADIO GROUP
+   ============================================================ */
+
+.project-details-section #branchContent .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    width: 100%;
+}
+
+
+/* ============================================================
+   RADIO OPTION
+   ============================================================ */
+
+.project-details-section #branchContent .radio-option {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 8px;
+
+    min-height: 42px;
+
+    padding: 9px 13px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #E4E7EC;
+    border-radius: 7px;
+
+    color: #475467;
+
+    font-family: var(--font-family);
+
+    font-size: .82rem;
+    font-weight: var(--fw-medium);
+
+    line-height: 1.35;
+
+    cursor: pointer;
+
+    transition:
+        border-color .2s ease,
+        background-color .2s ease,
+        color .2s ease,
+        box-shadow .2s ease;
+}
+
+
+/* ============================================================
+   RADIO OPTION HOVER
+   ============================================================ */
+
+.project-details-section #branchContent .radio-option:hover {
+    border-color: #D0D5DD;
+
+    background: #ffffff;
+}
+
+
+/* ============================================================
+   SELECTED RADIO OPTION
+   ============================================================ */
+
+.project-details-section #branchContent .radio-option.selected {
+    border-color: #635BFF;
+
+    background: rgba(99, 91, 255, .055);
+
+    color: #3F38B5;
+
+    box-shadow:
+        0 0 0 1px rgba(99, 91, 255, .03);
+}
+
+
+/* ============================================================
+   RADIO INPUT
+   ============================================================ */
+
+.project-details-section #branchContent .radio-option input[type="radio"] {
+    width: 15px;
+    height: 15px;
+
+    flex: 0 0 auto;
+
+    margin: 0;
+
+    accent-color: #635BFF;
+
+    cursor: pointer;
+}
+
+
+/* ============================================================
+   TEXT INPUTS + TEXTAREAS
+   ============================================================ */
+
+.project-details-section #branchContent input[type="text"],
+.project-details-section #branchContent textarea {
+    display: block;
+
+    width: 100%;
+
+    padding: 13px 14px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #E4E7EC;
+    border-radius: 8px;
+
+    color: #171A2B;
+
+    font-family: var(--font-family);
+
+    font-size: .88rem;
+    font-weight: var(--fw-medium);
+
+    line-height: var(--lh-body);
+
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease,
+        background-color .2s ease;
+}
+
+
+/* ============================================================
+   TEXT INPUT
+   ============================================================ */
+
+.project-details-section #branchContent input[type="text"] {
+    min-height: 46px;
+}
+
+
+/* ============================================================
+   TEXTAREA
+   ============================================================ */
+
+.project-details-section #branchContent textarea {
+    min-height: 110px;
+
+    resize: vertical;
+}
+
+
+/* ============================================================
+   INPUT FOCUS
+   ============================================================ */
+
+.project-details-section #branchContent input[type="text"]:focus,
+.project-details-section #branchContent textarea:focus {
+    outline: none;
+
+    border-color: #635BFF;
+
+    box-shadow:
+        0 0 0 3px rgba(99, 91, 255, .08);
+}
+
+
+/* ============================================================
+   INPUT PLACEHOLDER
+   ============================================================ */
+
+.project-details-section #branchContent input[type="text"]::placeholder,
+.project-details-section #branchContent textarea::placeholder {
+    color: #A0A5B5;
+
+    font-family: var(--font-family);
+
+    font-weight: var(--fw-regular);
+
+    opacity: 1;
+}
+
+
+/* ============================================================
+   SUBMIT ROW
+   ============================================================ */
+
+.project-details-section #branchContent .submit-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 100%;
+
+    margin-top: 30px;
+    padding-top: 18px;
+
+    border-top: 1px solid #EEF0F4;
+}
+
+
+/* ============================================================
+   SUBMIT BUTTON
+   ============================================================ */
+
+.project-details-section #branchContent .submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    min-height: 42px;
+
+    padding: 10px 18px;
+
+    box-sizing: border-box;
+
+    background: #0D1738;
+
+    border: 0;
+    border-radius: 4px;
+
+    color: #ffffff;
+
+    font-family: var(--font-family);
+
+    font-size: .82rem;
+    font-weight: var(--fw-bold);
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background-color .25s ease,
+        box-shadow .25s ease;
+}
+
+
+/* ============================================================
+   SUBMIT BUTTON HOVER
+   ============================================================ */
+
+.project-details-section #branchContent .submit-btn:hover {
+    background: #151F45;
+
+    box-shadow:
+        0 4px 14px rgba(13, 23, 56, .12);
+}
+
+
+/* ============================================================
+   SUBMIT BUTTON ACTIVE
+   ============================================================ */
+
+.project-details-section #branchContent .submit-btn:active {
+    box-shadow: none;
+}
+
+
+/* ============================================================
+SUBMIT BUTTON ICON
+============================================================ */
+
+.project-details-section #branchContent .submit-btn i {
+    font-size: .7rem;
+
+    transition: transform .25s ease;
+}
+
+.project-details-section #branchContent .submit-btn:hover i {
+    transform: translateX(3px);
+}
+
+
+/* ============================================================
+   ============================================================
+   RESPONSIVE — TABLET
+   ============================================================
+   ============================================================ */
+
+@media (max-width: 900px) {
+
+    .project-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        min-height: 230px;
+    }
+
+    .project-details-section #branchContent .radio-group {
+        gap: 8px;
+    }
+
+}
+
+
+/* ============================================================
+   RESPONSIVE — MOBILE
+   ============================================================ */
+
+@media (max-width: 640px) {
+
+    /* --------------------------------------------------------
+       CARDS
+       -------------------------------------------------------- */
+
+    .project-card {
+        min-height: auto;
+
+        padding: 24px 20px 20px;
+    }
+
+
+    .project-card .card-number {
+        margin-bottom: 20px;
+    }
+
+
+    .project-card .card-footer {
+        padding-top: 24px;
+    }
+
+
+    /* --------------------------------------------------------
+       SUPPORTING NOTE
+       -------------------------------------------------------- */
+
+    .project-supporting-note {
+        padding: 14px 15px;
+    }
+
+
+    /* --------------------------------------------------------
+       CONTINUE ROW
+       -------------------------------------------------------- */
+
+    .project-continue-row {
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 10px;
+    }
+
+
+    .continue-status {
+        text-align: left;
+    }
+
+
+    .project-continue-row .continue-btn {
+        width: 100%;
+    }
+
+
+    /* --------------------------------------------------------
+       BACK BUTTON
+       -------------------------------------------------------- */
+
+    .project-details-section .back-row {
+        margin-bottom: 22px;
+    }
+
+
+    /* --------------------------------------------------------
+       FORM GROUP
+       -------------------------------------------------------- */
+
+    .project-details-section #branchContent .form-group {
+        margin-bottom: 22px;
+    }
+
+
+    /* --------------------------------------------------------
+       RADIO GROUP
+       -------------------------------------------------------- */
+
+    .project-details-section #branchContent .radio-group {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+
+    /* --------------------------------------------------------
+       RADIO OPTION
+       -------------------------------------------------------- */
+
+    .project-details-section #branchContent .radio-option {
+        width: 100%;
+    }
+
+
+    /* --------------------------------------------------------
+       INPUTS
+       -------------------------------------------------------- */
+
+    .project-details-section #branchContent input[type="text"],
+    .project-details-section #branchContent textarea {
+        font-size: .88rem;
+    }
+
+
+    /* --------------------------------------------------------
+       SUBMIT ROW
+       -------------------------------------------------------- */
+
+    .project-details-section #branchContent .submit-row {
+        justify-content: stretch;
+    }
+
+
+    /* --------------------------------------------------------
+       SUBMIT BUTTON
+       -------------------------------------------------------- */
+
+    .project-details-section #branchContent .submit-btn {
+        width: 100%;
+    }
+
+}
+
+
+/* ============================================================
+   CHECKBOX GROUP
+   ============================================================ */
+
+.project-details-section #branchContent .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    width: 100%;
+}
+
+
+/* ============================================================
+   CHECKBOX OPTION
+   ============================================================ */
+
+.project-details-section #branchContent .checkbox-option {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 8px;
+
+    min-height: 42px;
+
+    padding: 9px 13px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #E4E7EC;
+    border-radius: 7px;
+
+    color: #475467;
+
+    font-family: var(--font-family);
+
+    font-size: .82rem;
+    font-weight: var(--fw-medium);
+
+    line-height: 1.35;
+
+    cursor: pointer;
+
+    transition:
+        border-color .2s ease,
+        background-color .2s ease,
+        color .2s ease,
+        box-shadow .2s ease;
+}
+
+
+/* ============================================================
+   CHECKBOX OPTION HOVER
+   ============================================================ */
+
+.project-details-section #branchContent .checkbox-option:hover {
+    border-color: #D0D5DD;
+
+    background: #ffffff;
+}
+
+
+/* ============================================================
+   SELECTED CHECKBOX OPTION
+   ============================================================ */
+
+.project-details-section #branchContent .checkbox-option.selected {
+    border-color: #635BFF;
+
+    background: rgba(99, 91, 255, .055);
+
+    color: #3F38B5;
+
+    box-shadow:
+        0 0 0 1px rgba(99, 91, 255, .03);
+}
+
+
+/* ============================================================
+   CHECKBOX INPUT
+   ============================================================ */
+
+.project-details-section #branchContent .checkbox-option input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+
+    flex: 0 0 auto;
+
+    margin: 0;
+
+    accent-color: #635BFF;
+
+    cursor: pointer;
+}
+
+
+
+/* ============================================================
+   TIMELINE CARDS — radio-based, brand‑aligned
+   ============================================================ */
+
+.timeline-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin: 20px 0 24px;
+}
+
+.timeline-card {
+    position: relative;
+    display: block;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #E4E7EC;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease, transform 0.15s ease;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.025);
+}
+
+.timeline-card:hover {
+    border-color: #D7D9E5;
+    background: #ffffff;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.045);
+    transform: translateY(-1px);
+}
+
+.timeline-card input[type="radio"] {
+    display: none;
+}
+
+.timeline-card.active {
+    border-color: #635BFF;
+    background: linear-gradient(180deg, rgba(99, 91, 255, 0.055) 0%, rgba(99, 91, 255, 0.025) 100%);
+    box-shadow: 0 0 0 1px rgba(99, 91, 255, 0.08), 0 8px 24px rgba(99, 91, 255, 0.08);
+    transform: translateY(-1px);
+}
+
+.timeline-card-content {
+    position: relative;
+}
+
+.timeline-card-title {
+    font-family: var(--font-family);
+    font-size: 0.9rem;
+    font-weight: var(--fw-bold);
+    letter-spacing: normal;
+    line-height: 24px;
+    color: #171A2B;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 12px;
+}
+
+.timeline-card-desc {
+    font-family: var(--font-family);
+    font-size: 0.9rem;
+    line-height: 32px;
+    letter-spacing: normal;
+    font-weight: var(--fw-medium);
+    color: #667085;
+    line-height: var(--lh-body, 1.5);
+}
+
+.timeline-check {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #635BFF;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.timeline-card.active .timeline-check {
+    opacity: 1;
+}
+
+.timeline-check i {
+    filter: drop-shadow(0 1px 2px rgba(99, 91, 255, 0.15));
+}
+
+
+/* ============================================================
+   BUDGET SLIDER — brand‑aligned
+   ============================================================ */
+
+.budget-container {
+    width: 100%;
+    padding: 8px 0 20px;
+}
+
+.budget-slider-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 8px 0 28px;
+}
+
+.budget-slider-wrapper input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    background: transparent;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    outline: none;
+    margin: 0;
+}
+
+.budget-slider-wrapper input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 2px solid #635BFF;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(99, 91, 255, 0.25);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+    margin-top: -7px;
+}
+
+.budget-slider-wrapper input[type="range"]::-webkit-slider-thumb:hover {
+    box-shadow: 0 4px 14px rgba(99, 91, 255, 0.35);
+}
+
+.budget-slider-wrapper input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 2px solid #635BFF;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(99, 91, 255, 0.25);
+    cursor: pointer;
+}
+
+.budget-track {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: #E4E7EC;
+    border-radius: 4px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.budget-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #635BFF, #8B83FF);
+    border-radius: 4px;
+    transition: width 0.1s ease;
+    width: 0%;
+}
+
+.budget-value {
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 1.4rem;
+    font-weight: var(--fw-bold);
+    color: #171A2B;
+    margin: 16px 0 6px;
+}
+
+.budget-value span {
+    color: #635BFF;
+}
+
+.budget-labels {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-family);
+    font-size: 0.75rem;
+    font-weight: var(--fw-medium);
+    color: #9A9AAB;
+    padding: 0 2px;
+    margin-top: 4px;
+}
+
+
+/* ============================================================
+   RESPONSIVE — align with existing breakpoints
+   ============================================================ */
+
+@media (max-width: 900px) {
+    .timeline-grid {
+        gap: 14px;
+    }
+}
+
+@media (max-width: 640px) {
+    .timeline-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .timeline-card {
+        padding: 18px 16px;
+    }
+
+    .timeline-card-title {
+        font-size: 0.82rem;
+    }
+
+    .timeline-card-desc {
+        font-size: 0.8rem;
+    }
+
+    .budget-value {
+        font-size: 1.2rem;
+    }
+
+    .budget-labels {
+        font-size: 0.7rem;
+    }
+
+    .budget-slider-wrapper input[type="range"]::-webkit-slider-thumb {
+        width: 18px;
+        height: 18px;
+        margin-top: -6px;
+    }
+
+    .budget-slider-wrapper input[type="range"]::-moz-range-thumb {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+
+
+/* ============================================================
+   URL INPUT (Current Website)
+   ============================================================ */
+
+.project-details-section #branchContent input[type="url"] {
+    display: block;
+
+    width: 100%;
+
+    min-height: 46px;
+
+    padding: 13px 14px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #E4E7EC;
+    border-radius: 8px;
+
+    color: #171A2B;
+
+    font-family: var(--font-family);
+
+    font-size: .88rem;
+    font-weight: var(--fw-medium);
+
+    line-height: var(--lh-body);
+
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease,
+        background-color .2s ease;
+}
+
+
+/* ============================================================
+   URL INPUT FOCUS
+   ============================================================ */
+
+.project-details-section #branchContent input[type="url"]:focus {
+    outline: none;
+
+    border-color: #635BFF;
+
+    box-shadow:
+        0 0 0 3px rgba(99, 91, 255, .08);
+}
+
+
+/* ============================================================
+   URL INPUT PLACEHOLDER
+   ============================================================ */
+
+.project-details-section #branchContent input[type="url"]::placeholder {
+    color: #A0A5B5;
+
+    font-family: var(--font-family);
+
+    font-weight: var(--fw-regular);
+
+    opacity: 1;
+}
+
+
+/* ============================================================
+   RESPONSIVE — MOBILE
+   ============================================================ */
+
+@media (max-width: 640px) {
+
+    .project-details-section #branchContent input[type="url"] {
+        font-size: .88rem;
+    }
+
+}
+
+
+
+
+
+
+/* ----- original styles (kept exactly as you had them) ----- */
+.contact-details-section {
+    margin-top: 100px;
+}
+
+.contact-form-grid {
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    max-width: 760px;
+}
+
+/* 🔑 NEW: Make form-field the positioning parent for the error message */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative; /* 👈 This is the key fix */
+}
+
+.form-field label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0D1738;
+}
+
+.form-field input {
+    width: 100%;
+    height: 62px;
+
+    padding: 0 18px;
+
+    border: 1px solid #d7dce3;
+    border-radius: 12px;
+
+    font-family: var(--font-family);
+    font-size: 15px;
+
+    transition: .25s ease;
+
+    box-sizing: border-box;
+}
+
+.form-field input:focus {
+    outline: none;
+
+    border-color: #4F46E5;
+
+    box-shadow:
+        0 0 0 4px rgba(79, 70, 229, 0.08);
+}
+
+/* 🔑 NEW: Error message is positioned absolutely so it doesn't affect the layout */
+.error-message {
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    font-size: 13px;
+    color: #dc2626;
+    display: none;
+    white-space: nowrap; /* Prevents wrapping and keeps height predictable */
+}
+
+.error-message.show {
+    display: block;
+}
+
+.input-error {
+    border-color: #dc2626 !important;
+}
+
+.contact-footer {
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    max-width: 760px;
+}
+
+.privacy-note {
+    color: #667085;
+    line-height: 1.7;
+}
+
+.enquiry-submit-btn {
+    width: fit-content;
+}
+
+/* ----- container with soft border, shadow, and overflow protection ----- */
+.prob-conts {
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 24px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    padding: 40px 32px;
+    background: #ffffff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* ----- flex row for equal columns ----- */
+.contact-row {
+    display: flex;
+    gap: 48px;
+    align-items: stretch;
+    width: 100%;
+}
+
+/* left column – form (exactly half, minus half the gap) */
+.contact-col-left {
+    flex: 0 0 calc(50% - 24px);
+    max-width: calc(50% - 24px);
+}
+
+/* right column – image (exactly half, minus half the gap) */
+.contact-col-right {
+    flex: 0 0 calc(50% - 24px);
+    max-width: calc(50% - 24px);
+    min-height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.contact-col-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/* make the form grid and footer fill the full width of the left column */
+.contact-form-grid,
+.contact-footer {
+    max-width: 100%;
+}
+
+/* ----- responsive – stack on tablets & phones ----- */
+@media (max-width: 768px) {
+    .contact-row {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .contact-col-left,
+    .contact-col-right {
+        flex: 1 1 auto;
+        max-width: 100%;
+    }
+
+    .contact-col-right {
+        min-height: 280px;
+    }
+
+    .prob-conts {
+        padding: 24px 16px;
+    }
+}
+
+
+
+
+/* ===== DEFAULT: WHITE ICON ===== */
+.mobile-toggle span {
+    display: block;
+    background-color: #ffffff;  /* White */
+    transition: background-color 0.3s ease;
+}
+
+/* ===== MENU OPEN: BLACK ICON ===== */
+/* Option A – if your JS toggles a class on the body (common) */
+body.nav-open .mobile-toggle span {
+    background-color: #0D1738;  /* Black/dark */
+}
+
+/* Option B – if your JS toggles a class on the mobile menu itself */
+.mobile-menu.open ~ .header .mobile-toggle span,
+.mobile-menu.active ~ .header .mobile-toggle span {
+    background-color: #0D1738;  /* Black/dark */
+}
+
+/* Option C – if your JS toggles a class directly on the toggle button */
+.mobile-toggle.active span {
+    background-color: #0D1738;  /* Black/dark */
+}

@@ -1,0 +1,1362 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nexora Studio Services | Websites, Digital Solutions & Experiences</title>
+
+    <!-- Primary favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/nexora-favicon/favicon.svg">
+
+    <!-- PNG fallback -->
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/nexora-favicon/favicon-96x96.png">
+
+    <!-- Legacy fallback -->
+    <link rel="shortcut icon" href="/assets/favicon/nexora-favicon/favicon.ico">
+
+    <!-- Apple devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/nexora-favicon/apple-touch-icon.png">
+
+    <!-- Web app manifest -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- PWA Theme Color -->
+    <meta name="theme-color" content="#4F46E5">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Nexora">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <!-- Services CSS -->
+    <link rel="stylesheet" href="/static/css/services/style.css">
+
+    <link rel="stylesheet" href="static/css/responsive/style.css">
+
+    <!-- JavaScript -->
+    <script src="/static/js/pwa.js" defer></script>
+
+    <script src="static/js/service.js" defer></script>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    >
+
+    <!-- ===== FIXES: header z-index + mobile scroll ===== -->
+    <style>
+        /* Desktop header fix */
+        .hero .header-wrapper {
+            z-index: 10;
+        }
+
+        /* Mobile scroll fix – override any hidden overflow */
+        html,
+        body {
+            overflow-y: auto !important;
+            height: 100%;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .hero {
+            overflow: visible !important;
+        }
+    </style>
+</head>
+
+<body class="reveal-on-load dark-hero-page">
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <!-- HEADER SECTION -->
+        <div class="header-wrapper">
+
+            <!-- MAIN HEADER -->
+            <header class="header" role="banner">
+
+                <!-- Logo -->
+                <div class="logo">
+
+                    <a href="/" class="logo-link" aria-label="Nexora home">
+                        <img
+                            class="logo-text logo-img"
+                            src="/assets/logo-white/nexora.png"
+                            width="143"
+                            height="auto"
+                            alt="Nexora Studio logo"
+                            loading="eager"
+                        >
+                    </a>
+
+                </div>
+
+
+                <!-- NAVIGATION -->
+                <nav
+                    class="nav"
+                    aria-label="Main navigation"
+                >
+
+                    <ul class="nav-list">
+
+                        <li>
+                            <a
+                                href="index.html#solutions"
+                                class="nav-link"
+                            >
+                                Solutions
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="index.html#capabilities"
+                                class="nav-link"
+                            >
+                                Capabilities
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="about.html"
+                                class="nav-link"
+                            >
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="services.html"
+                                class="nav-link"
+                            >
+                                Services
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="work.html"
+                                class="nav-link"
+                            >
+                                Work
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="contact.html"
+                                class="nav-link"
+                            >
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+
+                <!-- CTA -->
+                <div class="header-cta">
+
+                    <a
+                        href="https://wa.me/254713324672?text=Hi%20Nexora%2C%20I'm%20viewing%20your%20Services%20page%20and%20would%20like%20to%20discuss%20which%20digital%20solution%20fits%20my%20business."
+                        target="_blank"
+                        rel="noopener"
+                        class="btn-primary"
+                    >
+                        Start a Conversation
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- MOBILE TOGGLE -->
+                <button
+                    class="mobile-toggle"
+                    id="mobileToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </header>
+
+
+            <!-- MOBILE MENU -->
+            <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+            <a href="index.html#solutions" class="nav-link">Solutions</a>
+            <a href="index.html#capabilities" class="nav-link">Capabilities</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="work.html" class="nav-link">Work</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="https://wa.me/254713324672?text=Hi%20Nexora%2C%20I'm%20using%20the%20Services%20page%20menu%20and%20would%20like%20help%20choosing%20the%20right%20service%20for%20my%20business." target="_blank" rel="noopener" class="btn-primary">Start a Conversation</a>
+        </div>
+
+        </div>
+
+        <button id="installAppBtnFloating" class="floating-install-btn" type="button" aria-label="Install Nexora app" hidden>
+            <i class="fas fa-download"></i>
+            <span>Install App</span>
+        </button>
+
+
+        <!-- SERVICE-HERO SECTION -->
+        <section class="service-hero">
+            <h3 class="eyebrow">Nexora Services</h3>
+
+            <h1 class="heading">
+                Digital systems built around how your business works.
+                <span>From high-converting digital experiences to connected business systems, Nexora brings strategy, design and technology together to build what your business needs to operate, compete and grow.</span>
+            </h1>
+
+            <div class="cta-btn">
+                <a href="#digital-experiences" class="btn-primary">Explore our services <i class="fas fa-angle-right"></i></a>
+
+                <a href="https://wa.me/254713324672?text=Hi%20Nexora%2C%20I'm%20on%20the%20Services%20hero%20section%20and%20want%20to%20explore%20the%20right%20digital%20services%20for%20my%20business." target="_blank" rel="noopener" class="btn-primary service-secondary">Start a conversation</a>
+            </div>
+        </section>
+    </section>
+
+
+    <main>
+        <!-- OUR CAPABILITIES -->
+        <section class="problem capabilities">
+            <div class="prob-cont capabilities-cont">
+                <p class="eyebrow">Our Digital Capabilities</p>
+                <h2 class="heading">
+                    Everything your digital foundation needs to move forward.
+                </h2>
+
+                <p class="descr">From the experience your customers see to the systems your team relies on, Nexora connects the critical pieces into one digital foundation.</p>
+
+                <div class="cap-grid">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="cont">
+                            <div class="heading">
+                                <div class="title">
+                                    <h3>Digital Experiences</h3>
+                                    <p class="descr">Build digital experiences that make your business easier to discover, trust, and choose.</p>
+                                </div>
+
+                                <!-- <a href="#explore-experiences" class="start-now-btn btn-primary">Explore Experiences <i class="fas fa-angle-right"></i></a> -->
+                            </div>
+
+                            <nav class="service-list">
+                                <li class="serv-list">Business websites</li>
+                                <li class="serv-list">Landing pages</li>
+                                <li class="serv-list">UI/UX design</li>
+                                <li class="serv-list">Service and product pages</li>
+                                <li class="serv-list">Responsive web experiences</li>
+                                <li class="serv-list">Conversion-focused experiences</li>
+                            </nav>
+
+
+                            <h3 class="outcome">Outcome</h3>
+                            <p class="descr">A professional digital presence designed to turn visitors into customers.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="cont">
+                            <div class="heading">
+                                <div class="title">
+                                    <h3>Customer Experiences</h3>
+                                    <p class="descr">Make it easier for customers to interact with your business online.</p>
+                                </div>
+
+                                <!-- <a href="#explore-solutions" class="start-now-btn btn-primary">Explore Solutions <i class="fas fa-angle-right"></i></a> -->
+                            </div>
+
+                            <nav class="service-list">
+                                <li class="serv-list">Service menus</li>
+                                <li class="serv-list">Product showcases</li>
+                                <li class="serv-list">Online catalogues</li>
+                                <li class="serv-list">Contact and enquiry forms</li>
+                                <li class="serv-list">Booking interfaces</li>
+                                <li class="serv-list">Interactive web experiences</li>
+                            </nav>
+
+
+                            <h3 class="outcome">Outcome</h3>
+                            <p class="descr">A smoother customer journey from discovering your business to taking action.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="cont">
+                            <div class="heading">
+                                <div class="title">
+                                    <h3>Web Infrastructure</h3>
+                                    <p class="descr">Build and launch websites that are fast, accessible, and ready for the web.</p>
+                                </div>
+
+                                <!-- <a href="#explore-infrastracture" class="start-now-btn btn-primary">Explore Infrastructure <i class="fas fa-angle-right"></i></a> -->
+                            </div>
+
+                            <nav class="service-list">
+                                <li class="serv-list">Responsive development</li>
+                                <li class="serv-list">Mobile-first implementation</li>
+                                <li class="serv-list">Website deployment</li>
+                                <li class="serv-list">Domain configuration</li>
+                                <li class="serv-list">Performance optimization</li>
+                                <li class="serv-list">Cross-browser compatibility</li>
+                            </nav>
+
+
+                            <h3 class="outcome">Outcome</h3>
+                            <p class="descr">A reliable website that works properly across devices and is ready for real customers.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <div class="cont">
+                            <div class="heading">
+                                <div class="title">
+                                    <h3>Digital Growth</h3>
+                                    <p class="descr">Improve how your website performs, communicates, and converts.</p>
+                                </div>
+
+                                <!-- <a href="#explore-growth" class="start-now-btn btn-primary">Explore Growth <i class="fas fa-angle-right"></i></a> -->
+                            </div>
+
+                            <nav class="service-list">
+                                <li class="serv-list">On-page SEO</li>
+                                <li class="serv-list">Google Business Profile setup</li>
+                                <li class="serv-list">SEO-friendly website structure</li>
+                                <li class="serv-list">Conversion optimization</li>
+                                <li class="serv-list">Content structure</li>
+                                <li class="serv-list">Website maintenance</li>
+                            </nav>
+
+                            <h3 class="outcome">Outcome</h3>
+                            <p class="descr">A stronger online presence built to attract attention and turn it into action.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- EXPERIENCES -->
+        <section class="problem capabilities why-nexora experiences" id="digital-experiences">
+            <div class="prob-cont capabilities-cont why-cont exp-cont">
+                <p class="eyebrow">01 / Digital Experiences</p>
+                <h2 class="heading">
+                    Create digital experiences people want to use.
+                </h2>
+
+                <p class="descr">Your website is often the first interaction someone has with your business. Nexora designs and builds experiences that make that interaction clear, credible and easy to act on.</p>
+
+                <a href="#explore-digital-experiences" class="btn-primary" style="margin: -20px 0 20px 0;">Explore Digital Experiences <i class="fas fa-angle-right"></i></a>
+
+
+                    <div class="consequences-grid why-grid exp-grid">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>01.</b> BUSINESS WEBSITES</span>
+                            <span class="heading-span">A digital presence built to represent your business properly.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <li class="serv-list">Business websites</li>
+                            <li class="serv-list">Landing pages</li>
+                            <li class="serv-list">UI/UX design</li>
+                            <li class="serv-list">Service and product pages</li>
+                            <li class="serv-list">Responsive web experiences</li>
+                            <li class="serv-list">Conversion-focused experiences</li>
+                        </nav>
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>02.</b> CONVERSION EXPERIENCES</span>
+                            <span class="heading-span">Turn attention into meaningful action.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <li class="serv-list">Landing-page journeys</li>
+                            <li class="serv-list">Calls to action</li>
+                            <li class="serv-list">Lead-generation flows</li>
+                            <li class="serv-list">Enquiry experiences</li>
+                            <li class="serv-list">Conversion-focused layouts</li>
+                        </nav>
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>03.</b> UX & INTERFACE DESIGN</span>
+                            <span class="heading-span">Make every interaction feel intentional.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <li class="serv-list">Information architecture</li>
+                            <li class="serv-list">User flows</li>
+                            <li class="serv-list">Interface design</li>
+                            <li class="serv-list">Responsive layouts</li>
+                            <li class="serv-list">Interaction patterns</li>
+                        </nav>
+                    </div>
+
+
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>04.</b> CUSTOMER JOURNEYS</span>
+                            <span class="heading-span">Remove friction between discovery and action.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <li class="serv-list">Booking journeys</li>
+                            <li class="serv-list">Contact and enquiry flows</li>
+                            <li class="serv-list">Service discovery</li>
+                            <li class="serv-list">Customer touchpoints</li>
+                            <li class="serv-list">Mobile-first experiences</li>
+                        </nav>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>05.</b> BUSINESS WEBSITES</span>
+                            <span class="heading-span">A digital presence built to represent your business properly.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <li class="serv-list">SEO foundations</li>
+                            <li class="serv-list">Performance</li>
+                            <li class="serv-list">Accessibility</li>
+                            <li class="serv-list">Deployment</li>
+                            <li class="serv-list">Maintainable frontend structure</li>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- BUSINESS SYSTEMS -->
+        <section class="problem capabilities why-nexora experiences" id="business-systems">
+            <div class="prob-cont capabilities-cont why-cont exp-cont">
+                <p class="eyebrow">02 / Business Systems</p>
+                <h2 class="heading">
+                    Make the work behind the business simpler.
+                </h2>
+
+                <p class="descr">Better digital experiences are only part of the equation. Nexora helps businesses organise the workflows, information and customer processes that support the experience behind the scenes.</p>
+
+                <a href="#explore-business-systems" class="btn-primary" style="margin: -20px 0 20px 0;">Explore Business Systems <i class="fas fa-angle-right"></i></a>
+
+
+                    <div class="consequences-grid why-grid exp-grid">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>01.</b> LEAD & ENQUIRY WORKFLOWS</span>
+                            <span class="heading-span">Turn incoming interest into an organised process.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <li class="serv-list">Lead capture</li>
+                            <li class="serv-list">Enquiry organisation</li>
+                            <li class="serv-list">Contact workflows</li>
+                            <li class="serv-list">Follow-up structures</li>
+                            <li class="serv-list">Customer information flows</li>
+                        </nav>
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>02.</b> BOOKING & CUSTOMER FLOWS</span>
+                            <span class="heading-span">Make it easier to move customers from interest to action.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <li class="serv-list">Booking flows</li>
+                            <li class="serv-list">Appointment journeys</li>
+                            <li class="serv-list">Confirmation flows</li>
+                            <li class="serv-list">Customer touchpoints</li>
+                            <li class="serv-list">Service selection</li>
+                        </nav>
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>03.</b> BUSINESS WORKFLOW AUTOMATION</span>
+                            <span class="heading-span">Reduce repetitive digital tasks.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <div class="serv-list">Form-driven workflows</div>
+                            <div class="serv-list">Notifications</div>
+                            <div class="serv-list">Automated follow-ups</div>
+                            <div class="serv-list">Data movement</div>
+                            <div class="serv-list">Repetitive task reduction</div>
+                        </nav>
+                    </div>
+
+
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>04.</b> OPERATIONAL INTERFACES</span>
+                            <span class="heading-span">Give teams clearer ways to manage digital processes.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <div class="serv-list">Internal interfaces</div>
+                            <div class="serv-list">Simple management tools</div>
+                            <div class="serv-list">Workflow views</div>
+                            <div class="serv-list">Data organisation</div>
+                            <div class="serv-list">Operational utilities</div>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- DIGITAL CONNECTIONS -->
+        <section class="problem capabilities why-nexora experiences" id="digital-connections">
+            <div class="prob-cont capabilities-cont why-cont exp-cont">
+                <p class="eyebrow">03 / Digital Connections</p>
+                <h2 class="heading">
+                    Bring every digital touchpoint together.
+                </h2>
+
+                <p class="descr">Your customers don't experience your business through one channel. Nexora creates connected digital experiences across your website, social channels, search presence and customer touchpoints so the journey feels consistent wherever it begins.</p>
+
+                <a href="#explore-digital-connections" class="btn-primary" style="margin: -20px 0 20px 0;">Explore Digital Connections <i class="fas fa-angle-right"></i></a>
+
+
+                    <div class="consequences-grid why-grid exp-grid">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>01.</b> WEBSITE & SOCIAL</span>
+                            <span class="heading-span">Create a consistent experience across your digital presence.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <li class="serv-list">Website</li>
+                            <li class="serv-list">Social profile links</li>
+                            <li class="serv-list">Social CTAs</li>
+                            <li class="serv-list">Campaign landing pages</li>
+                            <li class="serv-list">Consistent brand experience</li>
+                        </nav>
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>02.</b> SEARCH & DISCOVERY</span>
+                            <span class="heading-span">Make it easier for people to find and understand your business.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <li class="serv-list">SEO foundations</li>
+                            <li class="serv-list">Search-friendly pages</li>
+                            <li class="serv-list">Google Business Profile alignment</li>
+                            <li class="serv-list">Location-focused content</li>
+                            <li class="serv-list">Clear business information</li>
+                        </nav>
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>03.</b> CUSTOMER TOUCHPOINTS</span>
+                            <span class="heading-span">Connect the moments between discovery and action.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <li class="serv-list">WhatsApp click-to-chat</li>
+                            <li class="serv-list">Click-to-call</li>
+                            <li class="serv-list">Booking links</li>
+                            <li class="serv-list">Contact forms</li>
+                            <li class="serv-list">Enquiry CTAs</li>
+                            <li class="serv-list">Google Maps links</li>
+                        </nav>
+                    </div>
+
+
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>04.</b> DIGITAL TOUCHPOINTS</span>
+                            <span class="heading-span">Make every touchpoint consistent, accessible and ready to grow.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <li class="serv-list">Responsive implementation</li>
+                            <li class="serv-list">Performance</li>
+                            <li class="serv-list">Accessibility</li>
+                            <li class="serv-list">SEO structure</li>
+                            <li class="serv-list">Deployment</li>
+                            <li class="serv-list">Domain configuration</li>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--  Intelligence & OPTIMIZATION -->
+        <section class="problem capabilities why-nexora experiences" id="intelligence">
+            <div class="prob-cont capabilities-cont why-cont exp-cont">
+                <p class="eyebrow">04 / Intelligence & Optimization</p>
+                <h2 class="heading">
+                    Turn insight into a better digital experience.
+                </h2>
+
+                <p class="descr">A digital presence shouldn't stay static after launch. Nexora uses performance, search and user signals to identify opportunities, remove friction and continuously improve how your digital experience performs.</p>
+
+                <a href="#explore-optimization" class="btn-primary" style="margin: -20px 0 20px 0;">Explore Optimization <i class="fas fa-angle-right"></i></a>
+
+
+                    <div class="consequences-grid why-grid exp-grid">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>01.</b> SEARCH VISIBILITY</span>
+                            <span class="heading-span">Help the right people find your business.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <li class="serv-list">On-page SEO</li>
+                            <li class="serv-list">Metadata</li>
+                            <li class="serv-list">Search-friendly structure</li>
+                            <li class="serv-list">Local SEO foundations</li>
+                            <li class="serv-list">Google Business Profile alignment</li>
+                        </nav>
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>02.</b> PERFORMANCE</span>
+                            <span class="heading-span">Make the experience faster and more reliable.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <li class="serv-list">Page speed</li>
+                            <li class="serv-list">Image optimisation</li>
+                            <li class="serv-list">Asset optimisation</li>
+                            <li class="serv-list">Responsive performance</li>
+                            <li class="serv-list">Frontend efficiency</li>
+                        </nav>
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>03.</b> ANALYTICS & INSIGHTS</span>
+                            <span class="heading-span">Understand what visitors actually do.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <li class="serv-list">Google Analytics setup</li>
+                            <li class="serv-list">Search Console</li>
+                            <li class="serv-list">Traffic insights</li>
+                            <li class="serv-list">Page performance</li>
+                            <li class="serv-list">Basic conversion signals</li>
+                        </nav>
+                    </div>
+
+
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>04.</b> CONVERSION OPTIMISATION</span>
+                            <span class="heading-span">Remove friction between interest and action.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <li class="serv-list">CTA optimisation</li>
+                            <li class="serv-list">Page structure</li>
+                            <li class="serv-list">Content hierarchy</li>
+                            <li class="serv-list">Form improvements</li>
+                            <li class="serv-list">User-flow refinement</li>
+                            <li class="serv-list">Landing-page optimisation</li>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW WE WORK -->
+        <section class="problem capabilities why-nexora experiences" id="strategy">
+            <div class="prob-cont capabilities-cont why-cont exp-cont">
+                <p class="eyebrow">How We Work</p>
+                <h2 class="heading">
+                    A clear process from idea to launch.
+                </h2>
+
+                <p class="descr">Every project is different, but the principles stay the same: understand the problem, design the right solution, build carefully and improve continuously.</p>
+
+                <div class="consequences-grid why-grid exp-grid">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>01.</b> UNDERSTAND</span>
+                            <span class="heading-span">Learn how the business works today.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <li class="serv-list">Business goals</li>
+                            <li class="serv-list">Customers</li>
+                            <li class="serv-list">Current challenges</li>
+                            <li class="serv-list">Existing systems</li>
+                        </nav>
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>02.</b> DEFINE</span>
+                            <span class="heading-span">Create the right structure before building.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <li class="serv-list">Priorities</li>
+                            <li class="serv-list">User journeys</li>
+                            <li class="serv-list">Information architecture</li>
+                            <li class="serv-list">Scope</li>
+                        </nav>
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>03.</b> BUILD</span>
+                            <span class="heading-span">Design and develop the experience.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <li class="serv-list">Design</li>
+                            <li class="serv-list">Frontend implementation</li>
+                            <li class="serv-list">Testing</li>
+                            <li class="serv-list">Refinement</li>
+                        </nav>
+                    </div>
+
+
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <h3 class="heading">
+                            <span><b>04.</b> IMPROVE</span>
+                            <span class="heading-span">Keep making the system better.</span>
+                        </h3>
+
+                        <nav class="service-list">
+                            <li class="serv-list">SEO</li>
+                            <li class="serv-list">Performance</li>
+                            <li class="serv-list">Analytics</li>
+                            <li class="serv-list">Optimisation</li>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROOF THROUGH WORK -->
+        <section class="problem capabilities why-nexora featured-work" id="work">
+            <div class="prob-cont capabilities-cont why-cont featured-work-cont">
+                <p class="eyebrow">Proof Through Work</p>
+                <h2 class="heading">
+                    See the work behind the capabilities.
+                </h2>
+
+                <p class="descr">The best way to understand what Nexora can build is to see it in practice. Explore selected work across the experiences, systems and digital foundations we create.</p>
+
+                <a href="#view-case-studies" class="btn-primary" style="margin: -20px 0 20px 0;">View All Case Studies <i class="fas fa-angle-right"></i></a>
+
+                <div class="arrows">
+                    <button>
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+
+                    <button>
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                </div>
+
+                <div class="featured-work-grid">
+                    <div class="cont">
+                        <!-- Card 1 -->
+                        <div class="card">
+                            <div class="title">
+                                <h3 class="heading">Brian Johnson <br> <span>Nexora Design</span></h3>
+
+                                <div class="descr">A clearer digital experience designed to strengthen the business's online presence and guide customers toward action.</div>
+                            </div>
+
+                            <div class="work-cont">
+                                <div class="text">
+                                    <h3 class="work-title">Challenge</h3>
+                                    <p class="descr">As virtual workouts gain popularity among many studios, Mindbody wanted to make it easy for their customers to offer an omnichannel experience through their platfor</p>
+
+                                    <h3 class="work-title">Solution</h3>
+                                    <p class="descr">Mindbody worked with Stripe to help studios boost online revenue conversion with virtual classes. They also provided studios a simple way to set up card readers that allows customers to add classes or buy additional products in-person through a single, unified experience.</p>
+
+                                    <h3 class="work-title">Outcome</h3>
+                                    <p class="descr">Mindbody worked with Stripe to help studios boost online revenue conversion with virtual classes. They also provided studios a simple way to set up card readers that allows customers to add classes or buy additional products in-person through a single, unified experience.</p>
+
+                                    <h3 class="work-title">Products</h3>
+                                    <div class="links">
+                                        <a href="/">Connect</a>
+                                        <a href="/">Terminal</a>
+                                        <a href="/">Payment</a>
+                                        <a href="/">Nexora Sigma</a>
+                                    </div>
+                                </div>
+
+                                <div class="image">
+                                    <img src="https://i.pinimg.com/1200x/ab/d7/4f/abd74f51206a82f25a8efee45a745c50.jpg" alt="">
+
+                                    <div class="overlay red"></div>
+
+                                    <div class="cont">
+                                        <h3 class="heading">nexora</h3>
+                                        <p class="descr">Stripe’s value is they are a true partner, helping us roadmap our global expansion and work through local challenges. You don’t often see this type of strategic partnership with other payment vendors.</p>
+
+                                        <p class="client-name">
+                                            Michael Kenyatta,
+                                            <span>P. of Nexora Studio</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="card">
+                            <div class="title">
+                                <h3 class="heading">Brian Johnson <br> <span>Nexora Design</span></h3>
+
+                                <div class="descr">A more structured digital workflow designed to reduce friction and make everyday customer processes easier to manage.</div>
+                            </div>
+
+                            <div class="work-cont">
+                                <div class="text">
+                                    <h3 class="work-title">Challenge</h3>
+                                    <p class="descr">As virtual workouts gain popularity among many studios, Mindbody wanted to make it easy for their customers to offer an omnichannel experience through their platfor</p>
+
+                                    <h3 class="work-title">Solution</h3>
+                                    <p class="descr">Mindbody worked with Stripe to help studios boost online revenue conversion with virtual classes. They also provided studios a simple way to set up card readers that allows customers to add classes or buy additional products in-person through a single, unified experience.</p>
+
+                                    <h3 class="work-title">Outcome</h3>
+                                    <p class="descr">Mindbody worked with Stripe to help studios boost online revenue conversion with virtual classes. They also provided studios a simple way to set up card readers that allows customers to add classes or buy additional products in-person through a single, unified experience.</p>
+
+                                    <h3 class="work-title">Products</h3>
+                                    <div class="links">
+                                        <a href="/">Connect</a>
+                                        <a href="/">Terminal</a>
+                                        <a href="/">Payment</a>
+                                        <a href="/">Nexora Sigma</a>
+                                    </div>
+                                </div>
+
+                                <div class="image">
+                                    <img src="https://i.pinimg.com/1200x/80/47/fc/8047fcfc4babb5e24c59e4ba74c67b00.jpg" alt="">
+
+                                    <div class="overlay green"></div>
+
+                                    <div class="cont">
+                                        <h3 class="heading">mindbody</h3>
+                                        <p class="descr">Stripe’s value is they are a true partner, helping us roadmap our global expansion and work through local challenges. You don’t often see this type of strategic partnership with other payment vendors.</p>
+
+                                        <p class="client-name">
+                                            Dan Chandre,
+                                            <span>VP of Strategic Development</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="card">
+                            <div class="title">
+                                <h3 class="heading">Brian Johnson <br> <span>Nexora Design</span></h3>
+
+                                <div class="descr">A connected customer journey bringing the business's key digital touchpoints into a more consistent experience.</div>
+                            </div>
+
+                            <div class="work-cont">
+                                <div class="text">
+                                    <h3 class="work-title">Challenge</h3>
+                                    <p class="descr">As virtual workouts gain popularity among many studios, Mindbody wanted to make it easy for their customers to offer an omnichannel experience through their platfor</p>
+
+                                    <h3 class="work-title">Solution</h3>
+                                    <p class="descr">Mindbody worked with Stripe to help studios boost online revenue conversion with virtual classes. They also provided studios a simple way to set up card readers that allows customers to add classes or buy additional products in-person through a single, unified experience.</p>
+
+                                    <h3 class="work-title">Outcome</h3>
+                                    <p class="descr">Mindbody worked with Stripe to help studios boost online revenue conversion with virtual classes. They also provided studios a simple way to set up card readers that allows customers to add classes or buy additional products in-person through a single, unified experience.</p>
+
+                                    <h3 class="work-title">Products</h3>
+                                    <div class="links">
+                                        <a href="/">Connect</a>
+                                        <a href="/">Terminal</a>
+                                        <a href="/">Payment</a>
+                                        <a href="/">Nexora Sigma</a>
+                                    </div>
+                                </div>
+
+                                <div class="image">
+                                    <img src="https://i.pinimg.com/1200x/80/47/fc/8047fcfc4babb5e24c59e4ba74c67b00.jpg" alt="">
+
+                                    <div class="overlay blue"></div>
+
+                                    <div class="cont">
+                                        <h3 class="heading">mindbody</h3>
+                                        <p class="descr">Stripe’s value is they are a true partner, helping us roadmap our global expansion and work through local challenges. You don’t often see this type of strategic partnership with other payment vendors.</p>
+
+                                        <p class="client-name">
+                                            Dan Chandre,
+                                            <span>VP of Strategic Development</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="problem value faq">
+            <div class="prob-cont value-cont faq-cont">
+                <p class="eyebrow">Frequently Asked Questions</p>
+
+                <h2 class="heading">
+                    Questions before we build?
+                </h2>
+
+                <p class="descr">A few answers to help you understand how Nexora works, what we build and what to expect.</p>
+
+                <div class="faq-container">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item active">
+
+                        <button class="faq-question" type="button">
+
+                            <span>
+                                What does Nexora build?
+                            </span>
+
+                            <span class="faq-icon"><i class="fas fa-angle-right"></i></span>
+
+                        </button>
+
+
+                        <div class="faq-answer-wrapper">
+
+                            <div class="faq-answer">
+
+                                Nexora designs and builds digital experiences and frontend-focused business solutions, including websites, landing pages, customer journeys, digital workflows, integrations with existing tools, SEO foundations, analytics setup and optimisation.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item">
+
+                        <button class="faq-question" type="button">
+
+                            <span>
+                                Who is Nexora built for?
+                            </span>
+
+                            <span class="faq-icon"><i class="fas fa-angle-right"></i></span>
+
+                        </button>
+
+
+                        <div class="faq-answer-wrapper">
+
+                            <div class="faq-answer">
+
+                                Nexora works with businesses that want to improve how they present themselves online, attract and guide customers, and organise the processes behind their digital presence.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item">
+
+                        <button class="faq-question" type="button">
+
+                            <span>
+                                Do I need to know exactly what I need before contacting Nexora?
+                            </span>
+
+
+                            <span class="faq-icon"><i class="fas fa-angle-right"></i></span>
+
+
+                        </button>
+
+
+                        <div class="faq-answer-wrapper">
+
+                            <div class="faq-answer">
+
+                                No.
+
+                                <br>
+                                <div style="margin-bottom: 13px;"></div>
+
+                                You can come to us with a business problem rather than a predefined technical solution. We'll first understand what you're trying to achieve and then determine what should be built.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item">
+
+                        <button class="faq-question" type="button">
+
+                            <span>
+                                Can Nexora work with my existing website?
+                            </span>
+
+                            <span class="faq-icon"><i class="fas fa-angle-right"></i></span>
+
+                        </button>
+
+
+                        <div class="faq-answer-wrapper">
+
+                            <div class="faq-answer">
+
+                                Yes.
+
+                                <br>
+                                <div style="margin-bottom: 13px;"></div>
+
+                                If your existing website has a useful foundation, we can improve, restructure or extend it rather than automatically starting from zero.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-item">
+
+                        <button class="faq-question" type="button">
+
+                            <span>
+                                Does Nexora build backend systems and payment integrations?
+                            </span>
+
+                            <span class="faq-icon"><i class="fas fa-angle-right"></i></span>
+
+                        </button>
+
+
+                        <div class="faq-answer-wrapper">
+
+                            <div class="faq-answer">
+
+                                Not currently.
+
+                                <br>
+                                <div style="margin-bottom: 13px;"></div>
+
+                                Our current focus is frontend development and digital experiences using technologies such as HTML, CSS and JavaScript. Backend development, custom payment processing and complex server-side integrations are outside our current service scope.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="faq-item">
+
+                        <button class="faq-question" type="button">
+
+                            <span>
+                                How long does a project take?
+                            </span>
+
+                            <span class="faq-icon"><i class="fas fa-angle-right"></i></span>
+
+                        </button>
+
+
+                        <div class="faq-answer-wrapper">
+
+                            <div class="faq-answer">
+
+                                It depends on the scope.
+
+                                <br>
+                                <div style="margin-bottom: 5px;"></div>
+
+                                A focused website or landing page can move quickly, while a larger digital experience requires more planning, design, development and testing.
+
+                                <br>
+                                <div style="margin-bottom: 13px;"></div>
+
+                                We'll establish the expected timeline before development begins.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- FAQ 7 -->
+                    <div class="faq-item">
+
+                        <button class="faq-question" type="button">
+
+                            <span>
+                                How much does a project cost?
+                            </span>
+
+                            <span class="faq-icon"><i class="fas fa-angle-right"></i></span>
+
+                        </button>
+
+
+                        <div class="faq-answer-wrapper">
+
+                            <div class="faq-answer">
+                                Pricing depends on the scope, complexity and requirements of the project.
+
+                                <br>
+                                <div style="margin-bottom: 5px;"></div>
+
+                                After understanding what needs to be built, we'll provide a clear scope and proposal before work begins.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- FAQ 8 -->
+                    <div class="faq-item">
+
+                        <button class="faq-question" type="button">
+
+                            <span>
+                                What happens after the website launches?
+                            </span>
+
+                            <span class="faq-icon"><i class="fas fa-angle-right"></i></span>
+
+                        </button>
+
+
+                        <div class="faq-answer-wrapper">
+
+                            <div class="faq-answer">
+                                Launch isn't necessarily the end.
+
+                                <br>
+                                <div style="margin-bottom: 5px;"></div>
+
+                                Depending on the project, Nexora can continue helping with improvements, SEO, performance, analytics and conversion optimisation as the business grows.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FINAL CTA SECTION -->
+        <section class="problem value final-cta">
+            <div class="prob-cont value-cont final-cta-cont">
+                <div class="top-header">
+                    <p class="eyebrow">Have A Project In Mind?</p>
+                </div>
+
+                <h2 class="heading">
+                    Let's build something that moves your business forward.
+                </h2>
+
+                <p class="descr">Tell us what you're trying to achieve, where you're stuck, or what you want to build. We'll help you identify the right digital direction and the next step.</p>
+
+                <!-- CTA -->
+                <div class="hero-cta final">
+                    <a href="https://wa.me/254713324672?text=Hi%20Nexora%2C%20I've%20reviewed%20your%20services%20and%20would%20like%20to%20plan%20a%20digital%20system%20that%20moves%20my%20business%20forward." target="_blank" rel="noopener" class="btn-primary btn-secondary" style="border: 1.2px solid rgba(254, 254, 254, 0.218);">Start a Conversation <i class="fas fa-angle-right"></i></a>
+
+                    <a href="/work.html" class="btn-primary work-primary">View our work <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="content">
+            <!-- TOP NAV -->
+            <div class="top-nav">
+                <div class="card">
+                    <a href="/" style="text-decoration: none;" class="logo">nexora</a>
+                    <p class="descr">Building the digital systems that move businesses forward.</p>
+                    <p class="location">Nairobi, Kenya</p>
+                </div>
+
+                <div class="card">
+                    <h2 class="heading">Explore</h2>
+
+                    <nav>
+                        <a href="/">
+                            <li>Home</li>
+                        </a>
+                        <a href="about.html">
+                            <li>About</li>
+                        </a>
+                        <a href="services.html">
+                            <li>Services</li>
+                        </a>
+                        <a href="work.html">
+                            <li>Work</li>
+                        </a>
+                        <a href="contact.html">
+                            <li>Contact</li>
+                        </a>
+                    </nav>
+                </div>
+
+                <div class="card">
+                    <h2 class="heading">Capabilities</h2>
+
+                    <nav>
+                        <a href="#strategy">
+                            <li>Strategy</li>
+                        </a>
+                        <a href="#digital-experiences">
+                            <li>Digital Experiences</li>
+                        </a>
+                        <a href="#business-systems">
+                            <li>Business Systems</li>
+                        </a>
+                        <a href="#intelligence">
+                            <li>Intelligence</li>
+                        </a>
+                    </nav>
+                </div>
+
+                <div class="card">
+                    <h2 class="heading">Resources</h2>
+
+                    <nav>
+                        <a href="#case-studies">
+                            <li>Case Studies</li>
+                        </a>
+                        <a href="#insights">
+                            <li>Insights</li>
+                        </a>
+                        <a href="#faq">
+                            <li>FAQ</li>
+                        </a>
+                    </nav>
+                </div>
+
+                <div class="card">
+                    <h2 class="heading">Connect</h2>
+
+                    <nav>
+                        <a href="#youtube" title="Youtube">
+                            <li><i class="fab fa-youtube"></i> Youtube</li>
+                        </a>
+                        <a href="#linkedIn" title="LinkedIn">
+                            <li><i class="fab fa-linkedin-in"></i> LinkedIn</li>
+                        </a>
+                        <a href="#tiktok" title="Tiktok">
+                            <li><i class="fab fa-tiktok"></i> Tiktok</li>
+                        </a>
+                        <a href="#whatsapp" title="Whatsapp">
+                            <li><i class="fab fa-whatsapp"></i> Whatsapp</li>
+                        </a>
+                    </nav>
+                </div>
+
+            </div>
+
+            <!-- BOTTOM NAV -->
+            <div class="bottom-nav">
+                <div class="copywright">&copy 2026 Nexora Studio. All rights reserved</div>
+
+                <nav>
+                    <a href="#privacy-policy">
+                        <li>Privacy Policy</li>
+                    </a>
+                    <a href="#terms-of-services">
+                        <li>Terms of Service</li>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

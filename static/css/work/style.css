@@ -1,0 +1,1409 @@
+:root {
+    --font-family: "SF Pro Display", sans-serif;
+    --font-nevera: 'Nevera', sans-serif;
+
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+    --ls-tight: -0.045em;
+    --ls-normal: -0.02em;
+
+    --lh-heading: 1.05;
+    --lh-body: 1.5;
+}
+
+
+
+/* HERO SECTION */
+.work-hero {
+    width: 100%;
+    padding: 50px 30px 0;
+
+    margin-bottom: 160px;
+}
+
+
+.work-hero .cont {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.work-hero .cont .text  {
+    width: 100%;
+    height: 650px;
+}
+
+.work-hero .cont .text .eyebrow {
+    background-color: transparent;
+    display: inline-flex;
+    width: fit-content;
+    color: #635BFF;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: var(--fw-bold);
+    opacity: .7;
+    line-height: 1.45;
+    letter-spacing: -0.02em;
+    /* color: #041633; */
+    opacity: .9;
+    margin-bottom: 85px;
+}
+
+
+.work-hero .cont .text .heading {
+    font-size: 48px;
+    line-height: normal;
+    font-weight: calc((var(--fw-bold) - 100));
+    font-family: var(--font-family);
+    color: rgb(10, 37, 64);
+
+    margin-bottom: 32px;
+}
+
+.work-hero .cont .text .descr {
+    font-size: 18px;
+    line-height: 23px;
+    font-family: var(--font-family);
+    font-weight: var(--fw-medium);
+    letter-spacing: normal;
+    color: #425466;
+    width: 459.771px;
+    margin-bottom: 11px;
+    margin-bottom: 32px;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    min-width: 0;
+}
+
+.image .cards-grid {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image .cards-grid img {
+    transform: none;
+}
+
+/* =========================
+CARDS
+========================= */
+
+.image .card {
+    position: absolute;
+    width: 29%;
+    height: 270px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.08),
+        0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.image .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: scale(1.08);
+
+    transform: all .6s ease;
+}
+
+.image .card:hover img {
+    transform: scale(1);
+}
+
+.image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.151);
+}
+
+
+/* =========================
+CARD CONTENT
+========================= */
+
+.image .content {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 18px;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.15) 50%,
+        transparent
+    );
+}
+
+.image .content h4 {
+    margin: 0;
+
+    color: #ffffff;
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: var(--fw-bold);
+    opacity: 1;
+}
+
+
+.image .content .link-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.image .content p {
+    margin: 0;
+
+    color: #fff;
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 1.4;
+    opacity: .95;
+}
+
+.image .content a {
+    color: #fff;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: var(--fw-medium);
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    opacity: 1;
+}
+
+.image .content a i {
+    font-size: 10px;
+
+    transition: transform .4s ease;
+}
+
+
+.image .card:hover a i {
+    transform: translateX(5px);
+}
+
+
+
+
+/* =========================
+POSITIONS
+========================= */
+
+.image .card-1 {
+    top: 0;
+    left: 0;
+}
+
+
+.image .card-2 {
+    top: 80px;
+    left: 35%;
+}
+
+.image .card-3 {
+    top: 40px;
+    right: 6px;
+}
+
+.image .card-4 {
+    top: 304px;
+    left: 0;
+}
+
+.image .card-5 {
+    top: 384px;
+    left: 35%;
+}
+
+.image .card-6 {
+    top: 344px;
+    right: 6px;
+}
+
+
+/* =====================================================
+   FEATURED PROJECTS
+===================================================== */
+
+.projects {
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    margin-bottom: 98px;
+}
+
+.projects .projects-cont .descr {
+    margin-bottom: 48px;
+}
+
+.projects .projects-cont .content {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 60px;
+}
+
+
+/* =====================================================
+   GENERAL PROJECT CARD
+===================================================== */
+
+.projects .projects-cont .content .card {
+    padding: 0;
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.10);
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    position: relative;
+
+    transition: box-shadow 0.2s ease;
+
+    background: transparent;
+
+    /*
+       Keeps the animated border isolated from
+       the rest of the page.
+    */
+    isolation: isolate;
+}
+
+.projects .projects-cont .content .card:hover {
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =====================================================
+   CARD BORDER WRAPPER
+===================================================== */
+
+.projects .projects-cont .content .card .card-border {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 2px;
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    background: #ffffff;
+
+    isolation: isolate;
+}
+
+
+/* =====================================================
+   MOVING PULSE — CARD
+===================================================== */
+
+.projects .projects-cont .content .card .card-border::before {
+    content: "";
+
+    position: absolute;
+
+    /*
+       Instead of creating a 200% x 200% layer,
+       keep the animated surface only slightly
+       larger than the card.
+    */
+    inset: -20%;
+
+    background: conic-gradient(
+        from 0deg,
+        transparent 0deg,
+        transparent 300deg,
+        #2563eb 320deg,
+        #7c3aed 335deg,
+        #ec4899 350deg,
+        #ffffff 355deg,
+        transparent 360deg
+    );
+
+    animation: cardPulse 8s linear infinite;
+
+    z-index: 0;
+
+    pointer-events: none;
+
+    /*
+       Tells the browser this layer is going to move.
+    */
+    will-change: transform;
+
+    /*
+       Creates its own compositing layer.
+    */
+    transform: translateZ(0);
+}
+
+
+/* =====================================================
+   CARD INNER
+   COMPLETELY COVERS THE CENTER OF THE PULSE
+===================================================== */
+
+.projects .projects-cont .content .card .card-inner {
+    position: relative;
+
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+
+    border-radius: 13px;
+
+    overflow: hidden;
+
+    /*
+       Keeps content independent from pulse.
+    */
+    isolation: isolate;
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.projects .projects-cont .content .card .image {
+    width: 100%;
+    height: 500px;
+
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+    overflow: hidden;
+
+    margin-bottom: 48px;
+
+    background: #ffffff;
+}
+
+.projects .projects-cont .content .card .image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transform: none;
+
+    border-radius: 0;
+
+    /*
+       Removed the image filter.
+
+       brightness + contrast + saturate causes
+       an additional image paint/compositing cost.
+    */
+}
+
+
+/* =====================================================
+   CARD TEXT
+===================================================== */
+
+.projects .projects-cont .content .card .text {
+    padding: 0 32px 40px;
+
+    background: #ffffff;
+}
+
+
+/* =====================================================
+   EYEBROW
+===================================================== */
+
+.projects .projects-cont .content .card .text .eyebrow {
+    font-size: 12.5px;
+    line-height: normal;
+
+    font-family: var(--font-family);
+    font-weight: var(--fw-bold);
+
+    letter-spacing: normal;
+
+    color: #425466;
+
+    background-color: transparent;
+
+    padding: 0;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   CLIENT / INDUSTRY
+===================================================== */
+
+.projects .projects-cont .content .card .text .client-industry {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin: 0 0 32px;
+}
+
+.projects .projects-cont .content .card .text .client-industry .client {
+    font-size: 20px;
+
+    font-family: var(--font-family);
+    font-weight: var(--fw-bold);
+
+    opacity: 0.7;
+
+    letter-spacing: normal;
+    line-height: 24px;
+}
+
+.projects .projects-cont .content .card .text .client-industry .industry {
+    font-size: 24px;
+
+    font-weight: var(--fw-bold);
+    font-family: var(--font-family);
+
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.projects .projects-cont .content .card .text .client-industry .industry:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   CARD HEADING
+===================================================== */
+
+.projects .projects-cont .content .card .text .heading {
+    font-size: 2.5rem;
+}
+
+
+/* =====================================================
+   TEXT GRID
+===================================================== */
+
+.projects .projects-cont .content .card .text .txt-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.projects .projects-cont .content .card .text .txt-grid .cont-card .title {
+    font-size: 15px;
+
+    line-height: 20px;
+
+    font-weight: var(--fw-bold);
+    font-family: var(--font-family);
+
+    letter-spacing: normal;
+
+    color: #0A2540;
+
+    padding: 5px 0;
+}
+
+.projects .projects-cont .content .card .text .txt-grid .cont-card .descr {
+    font-size: 15px;
+
+    font-weight: var(--fw-medium);
+    font-family: var(--font-family);
+
+    line-height: 24px;
+
+    letter-spacing: normal;
+
+    color: #425466;
+
+    width: 232px;
+    height: fit-content;
+}
+
+
+/* =====================================================
+   VIEW CASE STUDY BUTTON
+===================================================== */
+
+.projects .projects-cont .content .card .text .view-btn {
+    background-color: transparent;
+
+    opacity: 1;
+
+    padding: 0;
+
+    cursor: pointer;
+
+    color: #000000;
+
+    box-shadow: none;
+}
+
+.projects .projects-cont .content .card .text .view-btn i {
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   CARD PULSE ANIMATION
+===================================================== */
+
+@keyframes cardPulse {
+    from {
+        transform: rotate(0deg) translateZ(0);
+    }
+
+    to {
+        transform: rotate(360deg) translateZ(0);
+    }
+}
+
+
+/* =====================================================
+   CARD 2
+   ANIMATED BORDER VERSION
+===================================================== */
+
+.projects .projects-cont .content .card-2 {
+    display: block;
+
+    padding: 0;
+
+    position: relative;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    background: transparent;
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.10);
+
+    isolation: isolate;
+}
+
+
+/* =====================================================
+   REMOVE GENERAL TOP GRADIENT FROM CARD 2
+===================================================== */
+
+.projects .projects-cont .content .card-2::before {
+    display: none;
+}
+
+
+/* =====================================================
+   IMAGE-2
+   OUTER BORDER CONTAINER
+===================================================== */
+
+.projects .projects-cont .content .card-2 .image-2 {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 2px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    background: transparent;
+
+    isolation: isolate;
+}
+
+
+/* =====================================================
+   MOVING BORDER PULSE — CARD 2
+===================================================== */
+
+.projects .projects-cont .content .card-2 .image-2::before {
+    content: "";
+
+    position: absolute;
+
+    /*
+       Much smaller than the original 200%.
+       Enough area for the conic gradient to
+       rotate around the border without creating
+       a huge repainting surface.
+    */
+    inset: -20%;
+
+    background: conic-gradient(
+        from 0deg,
+        transparent 0deg,
+        transparent 315deg,
+        #2563eb 328deg,
+        #7c3aed 340deg,
+        #ec4899 350deg,
+        #ffffff 356deg,
+        transparent 360deg
+    );
+
+    animation: borderPulse 8s linear infinite;
+
+    z-index: 0;
+
+    pointer-events: none;
+
+    will-change: transform;
+
+    transform: translateZ(0);
+}
+
+
+/* =====================================================
+   CARD 2 INNER
+===================================================== */
+
+.projects .projects-cont .content .card-2 .card-2-inner {
+    position: relative;
+
+    z-index: 1;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 100%;
+    height: 100%;
+
+    background: #ffffff;
+
+    border-radius: 13px;
+
+    overflow: hidden;
+
+    isolation: isolate;
+}
+
+
+/* =====================================================
+   CARD 2 IMAGE
+===================================================== */
+
+.projects .projects-cont .content .card-2 .card-2-inner .image {
+    width: 100%;
+    height: 100%;
+
+    margin-bottom: 0;
+
+    border-radius: 0;
+
+    overflow: hidden;
+}
+
+.projects .projects-cont .content .card-2 .card-2-inner .image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 0;
+
+    /*
+       Removed filter for better rendering performance.
+    */
+}
+
+
+/* =====================================================
+   CARD 2 TEXT
+===================================================== */
+
+.projects .projects-cont .content .card-2 .card-2-inner .text {
+    padding: 40px 48px 40px 28px;
+
+    border-radius: 0;
+}
+
+
+/* =====================================================
+   CARD 2 TEXT GRID
+===================================================== */
+
+.projects .projects-cont .content .card-2 .card-2-inner .text .txt-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* =====================================================
+   CARD 2 BORDER ANIMATION
+===================================================== */
+
+@keyframes borderPulse {
+    from {
+        transform: rotate(0deg) translateZ(0);
+    }
+
+    to {
+        transform: rotate(360deg) translateZ(0);
+    }
+}
+
+
+/* =====================================================
+   PERFORMANCE — REDUCE MOTION
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .projects .projects-cont .content .card .card-border::before,
+    .projects .projects-cont .content .card-2 .image-2::before {
+        animation: none;
+    }
+}
+
+
+
+/* CASE STUDIES */
+.case-studies {
+    display: block;
+}
+
+/* =========================
+   PROJECT FILTER
+========================= */
+
+.project-filter {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 48px;
+
+    scrollbar-width: none;
+
+    margin-top: 40px;
+}
+
+.project-filter::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =========================
+   FILTER BUTTON
+========================= */
+
+.project-filter .filter-btn {
+    flex-shrink: 0;
+
+    padding: 10px 18px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+
+    background: transparent;
+
+    color: #425466;
+
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: var(--fw-medium);
+
+    line-height: normal;
+
+    cursor: pointer;
+    border: 1.335px solid transparent;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.project-filter .filter-btn:hover {
+    border: 1.335px solid #0a254091;
+    color: #0A2540;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   ACTIVE
+========================= */
+
+.project-filter .filter-btn.active {
+    /* background-color: #0A2540; */
+    /* border-color: #0A2540; */
+    border-color: #635BFF;
+    color: #ffffff;
+
+    background-color: #635BFF;
+}
+
+
+/* =========================
+   ACTIVE HOVER
+========================= */
+
+.project-filter .filter-btn.active:hover {
+    /* background-color: #0A2540; */
+    /* border-color: #0A2540; */
+    border-color: #635BFF;
+    color: #ffffff;
+
+    transform: none;
+}
+
+
+
+
+
+/* =========================
+   CASE STUDIES GRID
+========================= */
+
+.case-studies-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    /* Prevent animation from affecting card spacing */
+    overflow: hidden;
+}
+
+
+/* =========================
+   ROW
+========================= */
+
+.case-studies-grid .top {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+
+    /*
+       Keeps the original two-column
+       asymmetric layout intact.
+    */
+}
+
+
+/* =========================
+   LARGE CARD
+========================= */
+
+.case-studies-grid .top > .card-img {
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+
+    /*
+       Prevent animation/layout rules
+       from changing card dimensions.
+    */
+    flex: 1 1 0;
+
+    user-select: none;
+}
+
+
+/* =========================
+   TWO SMALL CARDS CONTAINER
+========================= */
+
+.case-studies-grid .top .card-grid {
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+
+    flex: 1 1 0;
+}
+
+
+/* =========================
+   SMALL CARDS
+========================= */
+
+.case-studies-grid .top .card-grid .card-img {
+    width: 100%;
+    height: calc((600px - 16px) / 2);
+
+    overflow: hidden;
+    position: relative;
+
+    border-radius: 8px;
+
+    flex: 1 1 0;
+
+    user-select: none;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.case-studies-grid .top .card-img img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: cover;
+
+    transform: scale(1.15);
+
+    transition:
+        transform 0.4s ease;
+
+    filter: none;
+}
+
+
+.case-studies-grid .top .card-img:hover img {
+    transform: none;
+}
+
+
+/* =========================
+   OVERLAY
+========================= */
+
+.case-studies-grid .top .card-img .overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #00000080;
+}
+
+
+/* =========================
+   OVERLAY COLORS
+========================= */
+
+.case-studies-grid .top .card-img .overlay.green {
+    background: rgba(4, 105, 2, 0.453);
+}
+
+.case-studies-grid .top .card-img .overlay.orange {
+    background: rgba(99, 86, 0, 0.564);
+}
+
+.case-studies-grid .top .card-img .overlay.purple {
+    background: rgba(123, 1, 145, 0.43);
+}
+
+.case-studies-grid .top .card-img .overlay.red {
+    background: rgba(141, 0, 0, 0.284);
+}
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.case-studies-grid .top .card-img .cont {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: #ffffff;
+
+    padding: 30px;
+}
+
+
+/* =========================
+   CARD TITLE
+========================= */
+
+.case-studies-grid .top .card-img .cont .cont-title {
+    display: flex;
+    justify-content: space-between;
+
+    user-select: none;
+}
+
+
+.case-studies-grid .top .card-img .cont .cont-title .category {
+    font-size: 20px;
+
+    font-family: var(--font-family);
+    font-weight: var(--fw-bold);
+
+    opacity: 0.95;
+}
+
+
+.case-studies-grid .top .card-img .cont .cont-title .project {
+    font-size: 24px;
+
+    font-family: var(--font-family);
+    font-weight: calc(var(--fw-bold) - 100);
+
+    cursor: pointer;
+
+    transition: all 0.4s ease;
+}
+
+
+.case-studies-grid .top .card-img .cont .cont-title .project:hover {
+    opacity: 0.7;
+}
+
+
+/* =========================
+   CARD DESCRIPTION
+========================= */
+
+.case-studies-grid .top .card-img .cont .cont-descr {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.case-studies-grid .top .card-img .cont .cont-descr .descr {
+    color: #ffffff;
+
+    font-size: 25px;
+
+    font-family: var(--font-family);
+    font-weight: var(--fw-medium);
+
+    width: 427px;
+
+    margin: 0;
+
+    line-height: 30px;
+
+    letter-spacing: normal;
+}
+
+
+.case-studies-grid .top .card-img .cont .cont-descr .view {
+    color: #ffffff;
+
+    font-size: 16px;
+
+    background-color: transparent;
+
+    padding: 0;
+
+    font-family: var(--font-family);
+    font-weight: var(--fw-medium);
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   CARD HOVER
+========================= */
+
+.case-studies-grid .top .card-img:hover {
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   FILTER TRANSITION
+   ONLY THE WHOLE CONTENT AREA ANIMATES
+===================================================== */
+
+.case-studies-grid.filter-changing {
+    animation: caseStudyTransition 0.55s ease;
+}
+
+
+/*
+   Small shrink only.
+
+   It does NOT scale the individual cards.
+   Therefore the internal 16px gaps remain intact.
+*/
+
+@keyframes caseStudyTransition {
+
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    45% {
+        opacity: 0;
+        transform: scale(0.97);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* =========================
+   FILTER BUTTON ACTIVE STATE
+========================= */
+
+.project-filter .filter-btn {
+    cursor: pointer;
+}
+
+.project-filter .filter-btn.active {
+    cursor: default;
+}
+
+
+.project-in-mind {
+    padding: 0 55px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    margin-top: 84px;
+}
+
+
+.project-in-mind .title {
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: calc(var(--fw-bold) - 100);
+    letter-spacing: normal;
+    color: #28333f;
+
+    margin-bottom: 24px;
+
+    width: fit-content;
+}
+
+.project-in-mind .start {
+    border-radius: 9rem;
+    padding: 7px 16px;
+    font-size: 0.825rem;
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.project-in-mind .start:hover {
+    background-color: #0A2540;
+}
+
+.project-in-mind .start i {
+    font-size: 11px;
+}
+
+
+
+/* THE IMPACT */
+.impact {
+    margin-block: 98px;
+}
+
+
+/* EXPERIENCES */
+
+.experiences .exp-cont .exp-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.experiences .exp-cont .exp-grid .card {
+    width: fit-content;
+}
+
+.experiences .exp-cont .exp-grid .card .service-list .serv-list {
+    position: relative;
+    padding-left: 28px;
+
+    font-size: 15px;
+    line-height: 24px;
+    font-family: var(--font-family);
+    font-weight: var(--fw-medium);
+    letter-spacing: normal;
+    color: #425466;
+    width: fit-content;
+}
+
+
+.experiences .exp-cont .exp-grid .card .service-list .serv-list::before {
+    content: "✓";
+
+    position: absolute;
+    left: 0;
+    top: 2px;
+
+    width: 18px;
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e9ebff;
+
+    color: #4840DC;
+
+    border-radius: 50%;
+
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+
+.experiences .exp-cont .exp-grid .card .heading .heading-span {
+    font-size: 16px;
+    width: 260.771px;
+    font-weight: var(--fw-medium);
+    font-family: var(--font-family);
+}
+
+
+
+
+.final-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 40px 0;
+    border-radius: 12px;
+
+    background-color: rgb(13, 23, 56);
+}
+
+.final-cta .final-cta-cont .eyebrow,
+.final-cta .final-cta-cont .heading,
+.final-cta .final-cta-cont .descr {
+    color: #ffffff;
+
+    background-color: transparent;
+}
+
+
+.final-cta .final-cta-cont .eyebrow {
+    opacity: .95;
+}
+
+.final-cta .final-cta-cont .heading {
+    opacity: .95;
+}
+
+.final-cta .final-cta-cont .descr {
+    opacity: .795;
+}
+
+.final-cta .final-cta-cont .final {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.final-cta .final-cta-cont .final .work-primary:hover {
+    background-color: #4037e7;
+}
+
+
+.final-cta .final-cta-cont .final .btn-secondary {
+    color: #ffffff;
+
+    transition: all .2s ease;
+}
+
+.final-cta .final-cta-cont .final .btn-secondary:hover {
+    /* background-color: transparent; */
+    color: #000000;
+}
