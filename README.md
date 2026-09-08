@@ -1,6 +1,6 @@
 # Nexora Studio
 
-**Digital systems for ambitious businesses.**
+**Digital Experiences That Move businesses Forward.**
 
 Nexora Studio is a digital technology studio focused on building modern digital experiences, business systems, and growth infrastructure that help businesses operate smarter, compete stronger, and scale with confidence.
 
