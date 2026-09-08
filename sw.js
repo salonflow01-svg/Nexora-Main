@@ -2,7 +2,7 @@
    NEXORA SERVICE WORKER
 ============================================================ */
 
-const CACHE_NAME = "nexora-v7";
+const CACHE_NAME = "nexora-v7.5";
 
 const FILES_TO_CACHE = [
 
